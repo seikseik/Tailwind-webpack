@@ -1,3 +1,1 @@
-import '../scss/app.css';
-
-console.log("ciao")
+import '../css/app.css';

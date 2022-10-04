@@ -1,32 +1,31 @@
-/** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
-  purge: ['./dist/*.html'],
+  content: ['./src/**/*.{html,js}'],
   theme: {
-    screens: {
-      sm: '480px',
-      md: '768px',
-      lg: '976px',
-      xl: '1440px',
-    },
     colors: {
-      'blue': '#1fb6ff',
-      'pink': '#ff49db',
-      'orange': '#ff7849',
+      'grey-1000': '#272727',
+      'grey-900': '#3A4045',
+      'grey-800': '#61666A',
+      'grey-700': '#8A8A8D',
+      'blue-800': '#06173B',
+      'blue-700': '#0D3282',
+      'blue-600': '#1247BA',
+      'blue-500': '#0063FF',
+      'blue-400': '#1F87FF',
+      'blue-200': '#C2D9FF',
+      'white': "#FFFFFF",
     },
     fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
+      sans: ['Roboto', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
     },
-    extend: {
-      spacing: {
-        '128': '32rem',
-        '144': '36rem',
-      },
-      borderRadius: {
-        '4xl': '2rem',
-      }
-    }
   },
-  plugins: [],
-}
+  variants: {
+    borderWidth: ['responsive', 'hover'],
+  },
+  plugins: [require('@tailwindcss/forms', {
+    strategy: 'base', // only generate global styles
+    // strategy: 'class', // only generate classes
+  })],
+};
