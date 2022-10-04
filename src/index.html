@@ -1,4 +1,5 @@
 <html lang="it">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -6,7 +7,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="/css/app.css" />
   <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
@@ -15,50 +18,122 @@
 
 <body>
 
-  <div class="h-screen w-screen bg-[#EBF2FF]">
-    <div class="container mx-auto flex items-center h-full w-full p-4">
-        <div class="flex w-1/2 flex-col">
-          <h1 class="text-7xl leading-tight mb-5 text-grey-1000"> <div class="text-blue-400 flex">Finanziamento</div>Istant per Partners Zalando</h1>
-          <p class="text-grey-800 text-lg">Un form digitale che in soli 20 minuti ti fa ottenere liquidità entro le prossime 24 ore</p>
+  <div class="h-screen w-screen bg-[#EBF2FF] overflow-hidden relative">
+    <div class="container mx-auto flex items-center h-full w-full p-4 z-10">
+      <div class="flex w-1/2 flex-col">
+        <h1 class="text-[5vw] leading-tight mb-5 text-grey-1000">
+          <div class="text-blue-400 flex">Finanziamento</div>Istant per Partners Zalando
+        </h1>
+        <p class="text-grey-800 text-lg">Un form digitale che in soli 20 minuti ti fa ottenere liquidità entro le
+          prossime 24 ore</p>
+        <a href=""
+          class="decoration-white text-white my-8 w-fit rounded-full bg-blue-400 px-6 py-3 text-base font-medium hover:bg-blue-500 ">Ottieni il prestito</a>
 
-          <a href="" class="decoration-white text-white my-8 w-fit rounded-full bg-blue-400 px-6 py-3 text-base font-medium hover:bg-blue-500 ">Ottieni il prestito</a>
-
-          <div class="border p-4 text-blue-700 w-fit rounded-md border-blue-200 font-medium">
-            <h4>Sviluppato per i partners di:</h4>
-          </div>        
+        <div class="border p-4 text-blue-700 w-fit rounded-md border-blue-200 font-medium">
+          <h4 class="mb-3">Sviluppato per i partners di:</h4>
+          <img src="./static/logo.svg" alt="">
         </div>
+      </div>
 
-        <div class="flex w-1/2">
-          <h1 class="text-lg">Finanziamento istant per Partners Zalando</h1>
-        </div>
+      <div class="flex w-1/2 relative">
+        <img src="./static/illustrazione-1.png" alt="">
+          <div class="absolute w-full"></div> 
+      </div>
     </div>
+    
+    <div class="absolute w-full bottom-0 flex justify-center flex-col">
+      <div class="w-full text-center h-5 mx-auto flex items-center justify-center">
+        <svg class="cursor-pointer" id="scroll-down" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M33 18L22.5 27L12 18" stroke="#3A4045" stroke-width="3" stroke-linecap="round"/>
+      </svg></div>
+     <img class="relative min-w-full -bottom-10 z-0"  src="./static/ellipse.png" alt="">
+    </div>
+      
+  
   </div>
 
-    <main class="container">
-      <div class="flex py-[150px]">
-        <div class="flex w-1/2">
+  <main class="container mx-auto">
+    <div class="flex py-[50px] pt-0 items-center">
+      <div class="flex w-1/2 pr-8 item-center justify-center">
+        <img class="w-full h-auto" src="./static/illustrazione-2.png" alt="">
+      </div>
+      <div class="flex w-1/2 flex-col">
+        <div class="mb-8">
+          <h5 class="text-blue-500 font-medium uppercase mb-3">
+            perchè sceglierci
+          </h5>
+          <h4 class="font-bold text-grey-100 text-3xl leading-10"> Una soluzione pensata per le ditte individuali e le società di capitali o persone</h4>
         </div>
-        <div class="flex w-1/2 flex-col">
-          <div class="mb-8">
-            <h5 class="text-blue-500 font-medium uppercase mb-3">
-              perchè sceglierci
-            </h5>
-            <h4 class="font-bold text-grey-100 text-3xl leading-10"> Una soluzione pensata per le ditte individuali e le società di capitali o persone</h4>
+        <div class="grid grid-cols-2 gap-8">
+          <div class="flex items-center">
+            <img class="mr-4" src="./static/check_icon.svg" alt="">
+            <p class="text-grey-800 text-md">Almeno 2 anni di attività alle spalle della tua impresa per poter accedere al prestito</p>
           </div>
-          <div class="grid grid-cols-2 gap-8">
-            <div class="flex items-center text-grey-800 text-md">
-              <img src="" alt="">
-              <p>kjhdsa ashdkasd kajshdkjsahd</p>
-            </div>
+          <div class="flex items-center">
+            <img class="mr-4" src="./static/check_icon.svg" alt="">
+            <p class="text-grey-800 text-md">Da 10.000 a 100.000 euro di importo flessibile, con tasso fisso e rimborso in 12 rate mensili</p>
           </div>
-          <a href="" class="decoration-white text-white my-8 w-fit rounded-full bg-grey-800 px-6 py-3 text-base font-medium hover:bg-grey-900 ">Ottieni il prestito</a>
-          
+
+          <div class="flex items-center">
+            <img class="mr-4" src="./static/check_icon.svg" alt="">
+            <p class="text-grey-800 text-md">Zero garanzie da parte tua per ottenere il prestito, destinabile a qualsiasi esigenza finanziaria</p>
+          </div>
+          <div class="flex items-center">
+            <img class="mr-4" src="./static/check_icon.svg" alt="">
+            <p class="text-grey-800 text-md">Almeno 100.000 euro di fatturato per poter accedere al finanziamento</p>
+          </div>
         </div>
+        <a href=""
+          class="decoration-white text-white my-8 w-fit rounded-full bg-grey-800 px-6 py-3 text-base font-medium hover:bg-grey-900 ">Ottieni
+          il prestito</a>
 
       </div>
-    </main>
-  
+    </div>
+
+    <div class="py-[100px]">
+      <div class="text-center mb-20">
+        <h2 class="font-bold text-3xl text-grey-1000">Cosa ti serve?</h2>
+      </div>
+
+      <div class="grid grid-cols-3 justify-center gap-5">
+        <div class="mb-5 flex items-center justify-center flex-col rounded-2xl border border-[#E5E5E5] py-10 px-8">
+          <img class="mb-4" src="./static/icon_cf.svg" alt="">
+          <h5 class="font-bold text-grey-900 text-lg mb-4">Codice Fiscale</h5>
+          <p class="text-grey-700">del legale rappresentante dell’impresa</p>
+        </div>
+
+        <div class="mb-5 flex items-center justify-center flex-col rounded-2xl border border-[#E5E5E5] py-10 px-8">
+          <img class="mb-4" src="./static/icon_cf.svg" alt="">
+          <h5 class="font-bold text-grey-900 text-lg mb-4">Codice Fiscale</h5>
+          <p class="text-grey-700">del legale rappresentante dell’impresa</p>
+        </div>
+
+        <div class="mb-5 flex items-center justify-center flex-col rounded-2xl border border-[#E5E5E5] py-10 px-8">
+          <img class="mb-4" src="./static/icon_cf.svg" alt="">
+          <h5 class="font-bold text-grey-900 text-lg mb-4">Codice Fiscale</h5>
+          <p class="text-grey-700">del legale rappresentante dell’impresa</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 justify-center gap-5">
+        <div class="flex items-center justify-center flex-col rounded-2xl border border-[#E5E5E5] py-10 px-8">
+          <img class="mb-4" src="./static/icon_cf.svg" alt="">
+          <h5 class="font-bold text-grey-900 text-lg mb-4">Codice Fiscale</h5>
+          <p class="text-grey-700">del legale rappresentante dell’impresa</p>
+        </div>
+
+        <div class="flex items-center justify-center flex-col rounded-2xl border border-[#E5E5E5] py-10 px-8">
+          <img class="mb-4" src="./static/icon_cf.svg" alt="">
+          <h5 class="font-bold text-grey-900 text-lg mb-4">Codice Fiscale</h5>
+          <p class="text-grey-700">del legale rappresentante dell’impresa</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
 
 </body>
 
 </html>
+
